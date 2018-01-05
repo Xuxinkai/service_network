@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>service_network</display-name>
+  <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>com.cn.filter.EncodingFilter</filter-class>
+    <init-param>
+      <param-name>bm</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <servlet>
+    <servlet-name>RealtionToJsonServlet</servlet-name>
+    <servlet-class>com.cn.servlet.RealtionToJsonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ApiInfomationServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.ApiInfomationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WebMashupRelationToJsonServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.WebMashupRelationToJsonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WebApiRelationToJsonServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.WebApiRelationToJsonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WebTagRelationToJsonServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.WebTagRelationToJsonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>MashupApiTag的异构网络</description>
+    <servlet-name>MashupApiTagRelationToJsonServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.MashupApiTagRelationToJsonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>MashupApi的异构网络</description>
+    <servlet-name>MashupApiRelationToJsonServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.MashupApiRelationToJsonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>MashupTag的异构网络</description>
+    <servlet-name>MashupTagRelationToJsonServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.MashupTagRelationToJsonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>ApiTag的异构网络</description>
+    <servlet-name>ApiTagRelationToJsonServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.ApiTagRelationToJsonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Statistics2Servlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.statistics.Statistics2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Statistics3Servlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.statistics.Statistics3Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Statistics4Servlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.statistics.Statistics4Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Statistics5Servlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.statistics.Statistics5Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Statistics6Servlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.statistics.Statistics6Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>相关性能指标计算servlet</description>
+    <servlet-name>RelatedCharacteristicsIndicatorsServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.RelatedCharacteristicsIndicatorsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用来下载图的分析数据</description>
+    <servlet-name>AnalyzeDataDownLoadServlet</servlet-name>
+    <servlet-class>com.cn.servlet.search.AnalyzeDataDownLoadServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  <servlet-mapping>
+    <servlet-name>RealtionToJsonServlet</servlet-name>
+    <url-pattern>/realtionToJson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search/keywordsearch.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ApiInfomationServlet</servlet-name>
+    <url-pattern>/search/apiInfomation.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WebMashupRelationToJsonServlet</servlet-name>
+    <url-pattern>/search/WebMashupRelationToJson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WebApiRelationToJsonServlet</servlet-name>
+    <url-pattern>/search/WebApiRelationToJson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WebTagRelationToJsonServlet</servlet-name>
+    <url-pattern>/search/WebTagRelationToJson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MashupApiTagRelationToJsonServlet</servlet-name>
+    <url-pattern>/search/MashupApiTagRelationToJson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MashupApiRelationToJsonServlet</servlet-name>
+    <url-pattern>/search/MashupApiRelationToJson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MashupTagRelationToJsonServlet</servlet-name>
+    <url-pattern>/search/MashupTagRelationToJson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ApiTagRelationToJsonServlet</servlet-name>
+    <url-pattern>/search/ApiTagRelationToJson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Statistics2Servlet</servlet-name>
+    <url-pattern>/search/statistics/Statistics2Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Statistics3Servlet</servlet-name>
+    <url-pattern>/search/statistics/Statistics3Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Statistics4Servlet</servlet-name>
+    <url-pattern>/search/statistics/Statistics4Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Statistics5Servlet</servlet-name>
+    <url-pattern>/search/statistics/Statistics5Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Statistics6Servlet</servlet-name>
+    <url-pattern>/search/statistics/Statistics6Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RelatedCharacteristicsIndicatorsServlet</servlet-name>
+    <url-pattern>/search/RelatedCharacteristicsIndicatorsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AnalyzeDataDownLoadServlet</servlet-name>
+    <url-pattern>/search/AnalyzeDataDownLoad</url-pattern>
+  </servlet-mapping>
+
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
